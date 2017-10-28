@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    DonationDecision
+{% endblock %}
+
+{% block content %}
+    <p> Your endowment is {{Constants.endowment}} </p>
+
+    {% if player.treatment == 'richkid' %}
+        <img src="{% static "donations/richkid.jpg" %}">
+    {% else %}
+        <img src="{% static "donations/poorkid.jpg" %}">
+    {% endif %}
+
+    {% formfield player.donation %}
+
+    {% next_button %}
+
+{% endblock %}

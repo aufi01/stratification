@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    AllocationSurvey
+{% endblock %}
+
+{% block content %}
+
+    {% formfield player.sex %}
+
+    {% formfield player.age %}
+
+    {% formfield player.education %}
+
+    {% formfield player.occupation %}
+
+    {% formfield player.income %}
+
+    {% formfield player.previous_donation %}
+
+    {% next_button %}
+
+{% endblock %}

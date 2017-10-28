@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+
+    <p>Your sex is {{ player.sex }}.</p>
+    <p>Your age is {{ player.age }}.</p>
+    <p>Your highest educational level is {{ player.education }}.</p>
+    <p>Your current type of occupation is {{ player.occupation }}.</p>
+    <p>Your annual income is {{ player.income }} Euros.</p>
+    <p>Last year you donated {{ player.previous_donation }} Euros.</p>
+    {% next_button %}
+{% endblock %}
+
