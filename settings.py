@@ -101,26 +101,14 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
 
-   {
-        'name': 'donations',
-        'display_name': 'Donations',
-        'num_demo_participants': 10,
-        'app_sequence': ['donations'],
+    {
+        'name': 'allocation_test',
+        'display_name': 'Allocation_Test',
+        'num_demo_participants': 2,
+        'app_sequence': ['survey_test', 'main_experiment_test'],
     },
 
-    {
-        'name': 'allocation_survey',
-        'display_name': 'Allocation_Survey',
-        'num_demo_participants': 4,
-        'app_sequence': ['allocation_survey', 'donations'],
-    }
 
-    # {
-    #     'name': '...',
-    #     'display_name': '...',
-    #     'num_demo_participants': ...,
-    #     'app_sequence': ['...'],
-    # }
 ]
 
 # anything you put after the below line will override
